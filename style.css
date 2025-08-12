@@ -1,0 +1,179 @@
+.container{ 
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar{
+    width: 260px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.search{
+    width: 80%;
+    margin: 8px auto 30px auto;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+.contact-list{  
+    flex: 1;
+    overflow: auto;
+}
+
+.contact{ 
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border-bottom: 1px solid transparent;
+   
+}
+
+.aiden{ 
+    background-color: #e2e3e5;
+}
+
+
+.contact img{ 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.status{ 
+    display: block;
+    font-size: 12px;
+    color: rgb(48, 47, 47);
+}
+
+.status::before{
+   content: "• ";
+  color: red;
+}
+
+.status-online{ 
+     font-size: 12px;
+  color: #666;
+}
+
+.status-online::before{ 
+     content: "• ";
+  color: green;
+}
+
+.chat{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.info-contact{  
+     display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.info-contact img{  
+     width: 40px;
+  height: 40px;
+   border-radius: 50%;
+  
+}
+
+.chat-actions{  
+    display: flex;
+    gap: 8px;
+}
+
+.chat-actions button{   
+     background: none;
+  border: none;
+  font-size: 18px;
+  
+}
+
+
+.contact-aiden{ 
+    font-size: 18px;
+}
+
+.status-contact{ 
+    font-size: 17px;
+    color: rgb(77, 77, 77);
+   }
+
+
+
+
+.chat-messages{ 
+     flex: 1;
+  padding: 20px;
+  display: flex;
+   flex-direction: column;
+  overflow-y: auto;
+    gap: 15px;
+}
+
+.messages-sent{ 
+    align-self: flex-end;
+  background-color: #bce0e3;
+  padding: 10px;
+  border-radius: 12px;
+  max-width: 60%;
+}
+
+.messages-recived{  
+    align-self: flex-start;
+  background-color: #e2e3e5;
+  padding: 10px;
+  border-radius: 12px;
+  max-width: 60%;
+}
+
+.timestamp{ 
+    display: block;
+  font-size: 12px;
+  color: gray;
+  margin-top: 4px;
+}
+
+.chat-footer{ 
+display: flex;
+  gap: 10px;
+  padding: 12px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  }
+
+  .chat-footer input{   
+    flex: 1;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+ 
+  }
+
+  .chat-footer button{  
+     background: none;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 16px;
+  }
